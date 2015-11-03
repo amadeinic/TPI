@@ -1,0 +1,69 @@
+﻿<Window x:Class="amadei.nicola._5H.Libri.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:amadei.nicola._5H.Libri"
+        mc:Ignorable="d"
+        Title="Libri - Nicola Amadei 2015" Height="350" Width="525"
+        Name="FinestraPrincipale">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="20*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="lblISBN"
+                   Text="ISBN"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   FontSize="18"
+                   Margin="2"></TextBlock>
+        <TextBlock Name="lblTitolo"
+                   Text="Titolo"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   FontSize="18"
+                   Margin="2"></TextBlock>
+        <TextBlock Name="lblAutore"
+                   Text="Autore"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   FontSize="18"
+                   Margin="2"></TextBlock>
+        <TextBlock Name="lblGenere"
+                   Text="Genere"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   FontSize="18"
+                   Margin="2"></TextBlock>
+
+        <TextBox Name="txtISBN"
+                 Grid.Row="0"
+                 Grid.Column="2"
+                 HorizontalAlignment="Stretch"
+                 Margin="2"></TextBox>
+        <TextBox Name="txtTitolo"
+                 Grid.Row="1"
+                 Grid.Column="2"
+                 HorizontalAlignment="Stretch"
+                 Margin="2"></TextBox>
+        <TextBox Name="txtAutore"
+                 Grid.Row="2"
+                 Grid.Column="2"
+                 HorizontalAlignment="Stretch"
+                 Margin="2"></TextBox>
+        <ComboBox Name="cmbGenere"
+                  Grid.Row="3"
+                  Grid.Column="2"
+                  HorizontalAlignment="Stretch"
+                  Margin="2"></ComboBox>
+    </Grid>
+</Window>
